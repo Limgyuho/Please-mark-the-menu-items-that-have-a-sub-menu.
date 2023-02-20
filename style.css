@@ -1,0 +1,15 @@
+.menu > ul ul {
+    display:none;
+}
+
+.menu ul > li:hover > ul {
+    display:block;
+}
+
+.menu ul > li > a:not(:only-child)::after {
+    content:"[+]";
+}
+
+.menu ul > li:hover > a:not(:only-child)::after {
+    content:"[-]";
+}
